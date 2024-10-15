@@ -10,8 +10,7 @@ for i in range(8):
         print(f'{GREEN}{'    '*3}{YELLOW}{'    '*4}{END}')
     else:
         print(f'{GREEN}{'    '*3}{RED}{'    '*4}{END}')
-'''
-#'''
+
 #2 задание
 #9*5   1 2 3 4 5 6 7 8 9
 print('1 1 + 1 1 1 + 1 1')#1
