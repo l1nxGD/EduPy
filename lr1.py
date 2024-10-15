@@ -1,5 +1,5 @@
 import time
-'''
+
 GREEN = '\u001b[42m'
 YELLOW= '\u001b[43m'
 RED = '\u001b[41m'
@@ -33,7 +33,7 @@ for i in range(5):
 #0 1 2 -> 1 3 4 -> 1 3 7
 #3 4 -> 3 1
 #'''
-'''
+
 plot_list = [[0 for j in range(10)] for i in range(10)]
 res_ls = [i+1 for i in range(10)]
 step = abs(res_ls[0] - res_ls[9])//4
@@ -71,4 +71,3 @@ for i in st:
     if (i >= 0 and i <= 5) or (i <= -5 and i >= -10):
         res.append(i)
 print(sorted(res, reverse=True))
-'''
