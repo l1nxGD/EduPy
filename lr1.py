@@ -61,14 +61,6 @@ for i in plot_list:
     print(*i)
 print('     1 2 3 4 5 6 7 8 9')
 
-f = open('sequence.txt')
-st = [float(i) for i in f]
-res = list()
-for i in st:
-    if (i >= 0 and i <= 5) or (i <= -5 and i >= -10):
-        res.append(i)
-print(sorted(res, reverse=True))
-
 #4 задание
 f = open('sequence.txt')
 st = [float(i) for i in f]
