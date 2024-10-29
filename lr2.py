@@ -2,7 +2,7 @@ from csv import reader
 import xml.dom.minidom as minidom
 from os import write
 
-'''
+#'''
 with open('books.csv', 'r', encoding='windows-1251') as csvfile:
     table = list(reader(csvfile, delimiter=';'))
 
@@ -58,9 +58,8 @@ print(f"Название > 30 символов: {lengthName(table)}")
 catalogBooks(table)
 for book in ratingBook(table):
     print(book)
-#print(ratingBook(table))
 print(listOfTags(table))
-'''
+#'''
 
 #xml_file = open('currency.xml', 'r', encoding="windows-1251")
 #xml_data = xml_file.read()
