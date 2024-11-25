@@ -11,7 +11,7 @@ def get_total(item, size):
                 total[i][j] = max(item[i-1][2] + total[i-1][j - item[i-1][1]], total[i-1][j])
     return total
 
-def get_stuuf(item, size):
+def get_stuf(item, size):
     total = get_total(item, size)
     n = len(item)
     res = total[n][size]
@@ -42,7 +42,7 @@ total_value = sum(i[2] for i in item)
 sort_item = sorted(item, key = lambda x: x[2]/x[1], reverse=False)
 size = 8
 n = len(item)
-bag = get_stuuf(sort_item, size)
+bag = get_stuf(sort_item, size)
 
 survival_score =sum(j[2] for j in bag) - (total_value - sum(j[2] for j in bag)) + 5 + 15
 stuf = [i[0] for i in bag] + ['inhaler']
@@ -54,7 +54,7 @@ print()
 #for inventory with 7
 
 size = 6
-bag_7 = get_stuuf(item, size)
+bag_7 = get_stuf(item, size)
 
 survival_score_7 = sum(j[2] for j in bag_7) - (total_value - sum(j[2] for j in bag_7)) + 5 + 15
 stuf_7 = [i[0] for i in bag_7] + ['inhaler']
